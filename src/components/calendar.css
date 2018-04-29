@@ -1,0 +1,108 @@
+i {
+  border: solid;
+  border-color: black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.selected {
+  background-color: aqua;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar {
+  max-width: 401px;
+  overflow: auto;
+}
+
+.calendar-icon {
+  min-width: 50px;
+  text-align: center;
+  padding: 7px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.calendar-header {
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar-body-header-col > div {
+  padding: 14px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.calendar-col > div {
+  min-width: 25px;
+  padding: 14px;
+  text-align: center;
+}
+
+.calendar-month-col > div {
+  min-width: 100px;
+  padding: 14px;
+  text-align: center;
+}
+
+.calendar-twelve-col > div {
+  min-width: 100px;
+  padding: 14px;
+  text-align: center;
+}
+
+.calendar-year-col > div {
+  min-width: 100px;
+  padding: 14px;
+  text-align: center;
+}
+
+/* Date Transition */
+
+.date-enter {
+  opacity: 0.01;
+  transform: scale(0.1);
+}
+
+.date-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease-out;
+}
+
+/* Date Transition End */
+
+/* Default Transition */
+
+.twelve-enter {
+  opacity: 0.01;
+  transform: scale(0.1);
+}
+
+.twelve-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease-out;
+}
+
+/* Default Transition End */
